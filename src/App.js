@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import "../src/Components/Styles/loader.css";
 // Lazy loading components
 const Home = React.lazy(() => import("./Components/Home"));
+const SignUp = React.lazy(() => import("./Components/Signup"));
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
 
 
