@@ -11,6 +11,7 @@ const Donor = React.lazy(() => import("./Components/Donor"));
 const Listedprojects = React.lazy(() => import("./Components/Projects_list"));
 const AppliedProj = React.lazy(() => import("./Components/Applied_projects"));
 const Listcampaigns = React.lazy(() => import("./Components/Campaigns_list"));
+const Testimonial = React.lazy(() => import("./Components/Testimonial"));
 
 const App = () => {
 
@@ -28,6 +29,8 @@ const App = () => {
         <Route path="/listedprojects" element={<Listedprojects />} />
         <Route path="/listcampaigns" element={<Listcampaigns />} />
         <Route path="/AppliedProject" element={<AppliedProj />} />
+        
+        <Route path="/complains" element={<Complains/>} /> 
       </Routes>
 
 
