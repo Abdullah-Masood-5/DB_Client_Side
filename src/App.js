@@ -11,8 +11,13 @@ const Donor = React.lazy(() => import("./Components/Donor"));
 const Listedprojects = React.lazy(() => import("./Components/Projects_list"));
 const AppliedProj = React.lazy(() => import("./Components/Applied_projects"));
 const Listcampaigns = React.lazy(() => import("./Components/Campaigns_list"));
+<<<<<<< HEAD
 const Testimonial = React.lazy(() => import("./Components/Testimonial"));
 
+=======
+const Volunteer = React.lazy(() => import("./Components/Volunteer"));
+const Gallery = React.lazy(() => import("./Components/Gallery"));
+>>>>>>> b1c9c8b921380cf5a6d4925d7a92ee6a2491c2e0
 const App = () => {
 
   return (
@@ -24,6 +29,8 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/donor" element={<Donor />} />
+        <Route path="/volunteer" element={<Volunteer />} /> 
+        <Route path="/gallery" element={<Gallery />} />
 
 
         <Route path="/listedprojects" element={<Listedprojects />} />
