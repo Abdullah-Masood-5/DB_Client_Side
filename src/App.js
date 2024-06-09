@@ -29,6 +29,7 @@ const App = () => {
     <Router>
 
       <Navbar />
+      <Suspense fallback={<>d</> }>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/complains" element={<Complains/>} />  
       </Routes>
 
+      </Suspense>
 
     </Router>
   );
