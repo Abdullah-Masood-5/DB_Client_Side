@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { fs } from '../Config/Config';
 import "./Styles/home.css";
-import "./Styles/tables.css"; 
+import "./Styles/tables.css";
+import Footer from "./Footer";
 import mainlogo from "./Logo.png"; // Import the image
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
@@ -159,14 +160,18 @@ const Home = () => {
           ))}
         </Carousel>
       </div>
- 
+
+      {/*Continue*/}
+
       <p className="aboutheading" >Let's Get Involved</p>
       <div className="continue">
         <p className='getinvolve'>There are many ways to support our cause. Choose how you'd like to make a difference today:</p>
         <Link to="/signup" className="navButton">Donate Now</Link>
         <Link to="/signup" className="navButton">Volunteer Project</Link>
       </div>
- 
+
+      <Footer />
+
     </div>
   );
 };
