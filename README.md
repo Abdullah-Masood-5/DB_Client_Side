@@ -32,8 +32,8 @@
 #### npm i react-responsive-carousel
 
 # `Test Cases`
-### There are two files `insertProjects.jsx` And `insertCampaign.jsx` , they sort fo take a json array and that data to the fireabse.
-## However our project is realistically interactive so data has to be Real-time so that transpaerent action could take Place.
+### There are two files `insertProjects.jsx` And `insertCampaign.jsx` , they take a json array and add that data to the fireabse(ensuring CRUD operations).
+## However our project is realistically interactive , data has to be Real-time also.Thus transpaerent actions could take place.
 ## To test the sites you can find Below links:
 ## [Aisaar-Client](https://aisaar.netlify.app).
 ## [Aisaar-AdminDashboard](https://admin-aisaar.netlify.app).
