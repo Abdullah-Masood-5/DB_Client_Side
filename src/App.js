@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 
 import "../src/Components/Styles/loader.css";
-import Loader from "./Components/Loader";
-import AddDummyDataToFirestore from "./Components/Insertdata";  
+import Loader from "./Components/Loader"; 
 // Lazy loading components
 const Home = React.lazy(() => import("./Components/Home"));
 const Donor = React.lazy(() => import("./Components/Donor"));
@@ -44,8 +43,7 @@ const App = () => {
           <Route path="/complains" element={<Complains/>} /> 
           <Route path="/testimonial" element={<Testimonial/>} />  
 
-          
-          <Route exact path="/dummy" element={<AddDummyDataToFirestore />} />
+           
         </Routes>
 
 
